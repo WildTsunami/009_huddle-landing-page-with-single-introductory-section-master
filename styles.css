@@ -1,1 +1,191 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+*, *::before, *::after {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 100%;
+  font-family: "Open Sans", sans-serif, serif;
+}
+
+body {
+  background-color: blanchedalmond;
+}
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  margin-bottom: 20px;
+  background-image: url(images/bg-mobile.svg);
+  background-repeat: no-repeat;
+  background-size: 100% 60%;
+  background-color: #674baf;
+}
+
+.main_logo {
+  width: 150px;
+  margin: 30px 20px 50px;
+}
+
+.main_image {
+  display: block;
+  min-width: 340px;
+  width: 90vw;
+  margin: 0px auto 50px;
+}
+
+h1 {
+  width: 90%;
+  margin: 0px auto 10px;
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif, serif;
+  text-align: center;
+  color: white;
+}
+
+.main_text {
+  width: 85%;
+  margin: 0px auto 15px;
+  color: white;
+  line-height: 25px;
+  text-align: center;
+}
+
+.button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 225px;
+  height: 40px;
+  margin: 0px auto 70px;
+  background-color: white;
+  color: #e77ee7;
+  text-decoration: none;
+  border-radius: 60px;
+  -webkit-box-shadow: 0px 10px 10px 0px #543d8f;
+          box-shadow: 0px 10px 10px 0px #543d8f;
+}
+
+.button p {
+  font-size: 0.8rem;
+}
+
+.button:hover {
+  background-color: #e77ee7;
+  color: white;
+}
+
+.social_icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.social_icons a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 30px;
+  height: 30px;
+  border: 1px white solid;
+  text-decoration: none;
+  border-radius: 90px;
+}
+
+.social_icons a:hover {
+  border: 1px #dc56ca solid;
+}
+
+.social_icons a:hover i {
+  color: #dc56ca;
+}
+
+.social_icons i {
+  color: white;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-height: 100vh;
+  }
+  main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 55% 45%;
+        grid-template-columns: 55% 45%;
+    -ms-grid-rows: 15% 75% 10%;
+        grid-template-rows: 15% 75% 10%;
+        grid-template-areas: "header header" ". ." "footer footer";
+    max-width: 1200px;
+    min-height: auto;
+    max-height: 800px;
+    background-image: url(images/bg-desktop.svg);
+    background-size: cover;
+  }
+  .main_image {
+    width: 90%;
+    margin-left: 10%;
+  }
+  .main_logo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: header;
+  }
+  .text_bloc {
+    margin-left: 25px;
+  }
+  .text_bloc * {
+    text-align: left;
+    margin-left: 0px;
+  }
+  .social_icons {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: footer;
+    -ms-grid-column-align: end;
+        justify-self: end;
+    margin: 0px 10% 30px;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
