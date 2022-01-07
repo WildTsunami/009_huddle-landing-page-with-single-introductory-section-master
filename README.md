@@ -27,10 +27,10 @@ Users should be able to:
 ### Screenshot
 
 Mobile view :
-<img src="mobile_view.png" alt="">
+<img src="images/screens/mobile_view.png" alt="">
 
 Desktop view :
-<img src="desktop_view.png" alt="">
+<img src="images/screens/desktop_view.png" alt="">
 
 ### Links
 
